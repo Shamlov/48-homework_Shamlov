@@ -1,0 +1,42 @@
+@import "null.scss";
+
+.wrapper {
+  width: 700px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 20px;
+}
+
+.json-formatter-block {
+  display: flex;
+  background-color: rgb(243, 244, 216);
+  padding: 20px;
+  .btn-block {
+    flex: 0 0 30px;
+    writing-mode: vertical-rl;
+    margin: 0 10px;
+    button {
+      font-size: 20px;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(198, 225, 78);
+    }
+  }
+  .formatted-block,
+  .enter-block {
+    flex-grow: 1;
+  }
+  textarea {
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    height: 300px;
+  }
+  .error{
+    color: red;
+  }
+}
