@@ -109,4 +109,22 @@ p {
 }
 .json-formatter-block .error {
   color: red;
+}
+
+.directory_copywriters {
+  background-color: rgb(246, 200, 200);
+  padding: 20px;
+}
+.directory_copywriters .users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.directory_copywriters .users .user {
+  flex: 1 1 200px;
+  margin: 10px;
+  border: 1px solid black;
+  padding: 5px;
+  background-color: rgb(222, 239, 136);
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

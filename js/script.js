@@ -49,3 +49,62 @@ function outputString(json) {
 }
 
 // пример JSON  '{"name":"Luke Skywalker","height":"172","mass":"77","hair_color":"blond","skin_color":"fair","eye_color":"blue","birth_year":"19BBY","gender":"male"}'
+
+
+
+
+
+
+
+/////Задание 2////////////////////////////////
+
+fetch('https://jsonplaceholder.typicode.com/users', {method: 'GET'}
+).then((data) => {
+    return data.json()
+}).then((arrUsers) => {
+    showUsers(arrUsers)
+    addHtmlUsers(arrUsers)
+})
+
+
+function showUsers(arrUsers) {
+    console.log(arrUsers)
+}
+
+const users = document.querySelector('#users')
+function addHtmlUsers(arrUsers) {
+    arrUsers.forEach((el) => {
+        let div = document.createElement('div')
+        let p =  document.createElement('p')
+        div.className = 'user' 
+        div.setAttribute('data-id', el.id);
+        users.append(div)
+        p.textContent = el.name
+        div.append(p)
+    })
+}
+
+users.addEventListener('click', showInformation )
+function showInformation(event) {
+    if(!event.target.closest('div')) {
+        return
+    } 
+    
+    console.log(event.target)    // отловить элемент DIV при клике на p
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
