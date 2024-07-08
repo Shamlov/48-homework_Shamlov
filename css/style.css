@@ -127,4 +127,29 @@ p {
   padding: 5px;
   background-color: rgb(222, 239, 136);
   cursor: pointer;
+}
+.directory_copywriters table {
+  margin: 10px 0;
+  border-collapse: collapse;
+  font-size: 18px;
+  width: 100%;
+  background-color: rgb(222, 239, 136);
+}
+.directory_copywriters table td {
+  padding: 3px;
+  border: 1px solid black;
+}
+.directory_copywriters button {
+  width: 300px;
+  padding: 3px;
+  font-size: 20px;
+  margin: 0 auto;
+  display: block;
+}
+.directory_copywriters .post {
+  width: 400px;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: rgb(222, 239, 136);
 }/*# sourceMappingURL=style.css.map */
